@@ -1,0 +1,47 @@
+---
+title: "Cool Stuff"
+author: "Jovanni Catalan Hurtado"
+date: '2022-06-28'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r eval=FALSE}
+## Render Code
+
+rmarkdown::render("./_Rmd/2022-06-28-cool-stuff-blog3.Rmd", 
+                  output_format = "github_document",
+                  output_dir = "./_posts",
+                  output_options = list(
+                    html_preview= FALSE
+                    )
+)  
+```
+## Prompt Response
+I think it was really cool that we got to call an API we selected from a list and learned how to parse it and create graphical and numerical summaries for it.
+
+Below is an example of calling an API to retrieve information on weather a coordinate(longitude and latitude) is on water or not.
+
+
+The basic endpoint is:
+https://api.onwater.io/api/v1/results/[latitude],[longitude]?access_token=[your_token]
+
+## Basic Example
+```{r echo=FALSE}
+token <- "hidden"
+```
+```{r}
+library(httr)
+## Make API call
+apiURL <- paste("https://api.onwater.io/api/v1/results/23.92323,-66.3?access_token=", token, sep = "")
+result <- GET(apiURL)
+
+
+attributes(result)
+## Parse results based on structure
+parsed <- jsonlite::fromJSON((rawToChar(result$content)))
+data.frame(parsed)
+```
