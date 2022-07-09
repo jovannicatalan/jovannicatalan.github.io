@@ -1,3 +1,5 @@
+
+                                                  Project 2
 ## Project 2 Description:
 The purpose of this project is to analyze the online news popularity data set choose some predictive variables and create some numerical and graphical summaries based on those variables. We will fit both linear and ensemble regression models and compare the results to see which model performs the best using RMSE.
 We will also use report automation to generate individual reports for each data channel from the dataset. We first would split the data by data channel and proceed from there.
@@ -18,5 +20,5 @@ manually and this simplifies the process a lot. It also provides the needed cons
 thing being compared across the reports are the intentended data channels.
 
 ## Links:
-[Repo](https://github.com/jovannicatalan/ST558-Project2)
-[Pages](https://github.com/jovannicatalan/ST558-Project2](https://jovannicatalan.github.io/ST558-Project2/)
+[Repo](https://github.com/jovannicatalan/ST558-Project2)  
+[Pages](https://jovannicatalan.github.io/ST558-Project2/)
