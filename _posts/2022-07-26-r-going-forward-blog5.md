@@ -1,4 +1,5 @@
-# Prompt:
+# Blog Post 4: R
+
 __What your current thoughts are in terms of using R for data science - do you think you'll continue to use R going forward? 
 Why or why not?__
 
